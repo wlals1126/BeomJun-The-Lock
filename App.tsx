@@ -15,24 +15,24 @@ const ButtonWrapper = styled(View)`
   align-items: center;
 `;
 
-const App: React.FC = () => {
+const App = () => {
   const handleOpen = () => {
-    console.log('Open button pressed');
+    console.log('문희 열립니다.');
   };
 
   const handleClose = () => {
-    console.log('Close button pressed');
+    console.log('문희 닫힙니다.');
   };
 
   const handleChangePassword = () => {
-    console.log('Change Password button pressed');
+    console.log('비밀번호가 바뀌었습니다.');
   };
 
   return (
     <Container>
       <ButtonWrapper>
-        <Button title="열기" onPress={handleOpen} />
-        <Button title="닫기" onPress={handleClose} />
+        <Button title="문 열기" onPress={handleOpen} />
+        <Button title="문 닫기" onPress={handleClose} />
         <Button title="비밀번호 변경" onPress={handleChangePassword} />
       </ButtonWrapper>
     </Container>
